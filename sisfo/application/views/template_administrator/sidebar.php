@@ -37,8 +37,8 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Sub-Menu:</h6>
-                        <a class="collapse-item" href="<?php echo base_url('administrator/krs') ?>">Lihat KRS</a>
-                        <a class="collapse-item" href="<?php echo base_url('administrator/tambah_krs') ?>">Tambah KRS</a>
+                        <a class="collapse-item <?php if($this->uri->uri_string() =='administrator/krs') { echo 'active'; } ?>" href="<?php echo base_url('administrator/krs') ?>">Lihat KRS</a>
+                        <a class="collapse-item <?php if($this->uri->uri_string() =='administrator/tambah_krs') { echo 'active'; } ?>" href="<?php echo base_url('administrator/tambah_krs') ?>">Tambah KRS</a>
                     </div>
                 </div>
             </li>
