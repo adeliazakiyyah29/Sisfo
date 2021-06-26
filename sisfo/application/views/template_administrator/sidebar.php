@@ -19,7 +19,7 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
+            <li class="nav-item <?php if($this->uri->uri_string() =='administrator/dashboard') { echo 'active'; } ?>">
                 <a class="nav-link" href="dashboard">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
@@ -28,7 +28,7 @@
            
 
             <!-- Nav Item - Pages KRS Menu -->
-            <li class="nav-item">
+            <li class="nav-item <?php if($this->uri->uri_string() =='administrator/krs') { echo 'active'; } ?>">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="far fa-edit"></i>
@@ -44,7 +44,7 @@
             </li>
 
             <!-- Nav Item - KHS  Menu -->
-            <li class="nav-item">
+            <li class="nav-item <?php if($this->uri->uri_string() =='administrator/khs') { echo 'active'; } ?>">
                 <a class="nav-link" href="<?php echo base_url('administrator/khs') ?>">
                     <i class="fas fa-fw fa-file-alt"></i>
                     <span>KHS</span></a>
@@ -52,7 +52,7 @@
 
 
             <!-- Nav Item - Pages transkip Menu -->
-            <li class="nav-item">
+            <li class="nav-item <?php if($this->uri->uri_string() =='administrator/transkrip') { echo 'active'; } ?>">
                 <a class="nav-link" href="<?php echo base_url('administrator/transkrip') ?>">
                     <i class="fas fa-print"></i>
                     <span>Transkip</span></a>
