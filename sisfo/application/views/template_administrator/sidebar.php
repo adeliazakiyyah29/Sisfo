@@ -19,7 +19,7 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="dashboard">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
@@ -45,7 +45,7 @@
 
             <!-- Nav Item - KHS  Menu -->
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="<?php echo base_url('administrator/khs') ?>">
                     <i class="fas fa-fw fa-file-alt"></i>
                     <span>KHS</span></a>
             </li>
@@ -53,7 +53,7 @@
 
             <!-- Nav Item - Pages transkip Menu -->
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="<?php echo base_url('administrator/transkrip') ?>">
                     <i class="fas fa-print"></i>
                     <span>Transkip</span></a>
             </li>
